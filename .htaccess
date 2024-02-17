@@ -1,4 +1,5 @@
+RewriteEngine On 
 Options All -Indexes
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^dev.localhost.com.br[nc]
-RewriteRule ^(.*)$ https://dev.localhost.com.br/$1 [r=301,nc]
+RewriteCond %{HTTP_HOST} ^dev.localhost.com.br [NC] 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

@@ -62,22 +62,21 @@ e também
 
 7º - Altere o arquivo de Hosts ou Equivalente em seu Sistema.
 
-Exemplo Windows (Caminho): C:\Windows\System32\drivers\etc\hosts
-
-Adicione o IP + Endereço Escolhido.
-
-Lembre-se de retirar o comentário da linha que adicionar (#).
+- Exemplo Windows (Caminho): C:\Windows\System32\drivers\etc\hosts
+- Adicione o IP + Endereço Escolhido.
+- Lembre-se de retirar o comentário da linha que adicionar (#).
 
 ```bash
  127.0.0.1  dev.localhost.com.br
 ```
 
-8º - Navegue até a raiz e execute.
+8º - No bash navegue até a raiz onde encontra-se o arquivo (docker-compose) e execute.
 
 ```bash
- .docker compose up -d
+ docker compose up -d
 ```
 
+9º - Ao acessar o endereço escolhido com https:// será exibido um aviso informando que o certificado de autoridade é inválido. Isso é esperado, uma vez que nós mesmos assinamos o certificado. Para continuar, clique em "Avançado" e depois em "Prosseguir para localhost (não seguro)".
 
 
 ## Contribuindo
