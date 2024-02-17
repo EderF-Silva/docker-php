@@ -1,4 +1,24 @@
 
+# Docker com SSL (PHP + MySQL + PHPMyAdmin)
+Ambiente de DESENVOLVIMENTO LOCAL utilizando docker.
+
+### Instalação Docker.
+ - [Tutorial de Instalação via WSL](https://github.com/codeedu/wsl2-docker-quickstart)
+
+
+### Ambiente Docker.
+ - php:8.2.6-apache
+ - mysql:5.7.26
+ - phpmyadmin:5.1.1
+
+Pacotes e Exteções consulte o arquivo.
+
+```bash
+   .docker\php\Dockerfile
+```
+
+
+
 ## Instalação
 
 1º - Faça o Clone do Repositório.
@@ -47,4 +67,10 @@ e também
 ```
 
 
+
+## Contribuindo
+Contribuições são sempre bem-vindas!
+
+## Licença
+[MIT](https://choosealicense.com/licenses/mit/)
 
