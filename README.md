@@ -60,7 +60,19 @@ e também
  .docker-php-mysql/.htaccess
 ```
 
-7º - Navegue até a raiz e execute.
+7º - Altere o arquivo de Hosts ou Equivalente em seu Sistema.
+
+Exemplo Windows (Caminho): C:\Windows\System32\drivers\etc\hosts
+
+Adicione o IP + Endereço Escolhido.
+
+Lembre-se de retirar o comentário da linha que adicionar (#).
+
+```bash
+ 127.0.0.1  dev.localhost.com.br
+```
+
+8º - Navegue até a raiz e execute.
 
 ```bash
  .docker compose up -d
